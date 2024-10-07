@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/indexassignment1.html -->
+<html lang="en"><!--our head tag start here--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<!--our body tag start here-->
+<body>
+
+<h1>APPLICATION FORM</h1>
+<form action="http://127.0.0.1:5500/indexassignment1.html">
+
+       Name: <input type="text" placeholder="Enter first name">
+       Last name: <input type="text" placeholder="Enter your last name">
+       <div></div>
+       Enter your age: <input type="number" placeholder="Enter your age">
+       <h2>Select your gender</h2>
+       <select name="gender" id="">
+       <option value="Male">Male</option>
+       <option value="Female">Female</option>
+       </select>
+       <h2>Select your position:</h2>
+       <input type="checkbox" name="positions" value="junior developer">junior developer
+       <input type="checkbox" name="positions" value="Mid level developer">Mid level developer
+       <input type="checkbox" name="positions" value="Senior developer">Senior developer
+       <h2>programming language</h2>
+       <input type="checkbox" name="programming languages" value="Java">Java
+       <input type="checkbox" name="programming language" value="C++">C++
+       <input type="checkbox" name="programming language" value="Javascript">Javascript
+       <div>
+
+       </div>
+       <button type="Submit">Submit</button>
+       <button type="Reset">Reset</button>
+
+</form>
+
+
+
+
+
+        
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
